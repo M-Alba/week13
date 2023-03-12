@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сервис комментариев</title>
+    <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <h1 class="comment__title">Сервис комментариев со спам фильтром</h1>
+            <div class="comment__wrapper">
+                <div class="comment__user">
+                    <h3 class="comment__subtitle">Оставьте ваш комментарий</h3>
+                    <div class="author">
+                        <span>Показывать ваше имя?</span>
+                        <label for="yes">Да<input type="radio" name="author" value="yes" id="yes" /></label>
+                        <label for="no">Нет<input type="radio" name="author" value="no" id="no" /></label>
+                    </div>
+                    <div>
+                        <label for="userName">Введите ваше ФИО:</label>
+                        <input type="text" id="userName">
+                    </div>
+                    <div>
+                        <label for="userAvatar">Введите ссылку вашего аватара:</label>
+                        <input type="text" id="userAvatar">
+                    </div>
+                    <div>
+                        <label for="userComment">Оставьте ваш комментарий:</label>
+                        <textarea id="userComment" rows="5"></textarea>
+                    </div>
+                    <button class="button">Отправить</button>
+                </div>
+                <div class="chat">
+                    <h3 class="comment__subtitle">Чат</h3>
+                    <div class="messages"></div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <script src="./index.js">
+    </script>
+</body>
+
+</html>
